@@ -2008,8 +2008,10 @@
             try {
                 f["--level"] = z,
                 L(m, f),
+				m.duplex='half';
                 y = await fetch(e, m)
             } catch (a) {
+				console.error(a)
                 console.warn("fetch fail:", e);
                 break
             }
