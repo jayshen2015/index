@@ -14,6 +14,7 @@ jsproxy_config({
   node_map: {
     'demo-hk': {
       label: '演示服务-香港节点',
+	  hidden: true,
       lines: {
         // 主机:权重
         'node-aliyun-hk-1.etherdream.com:8443': 1,
@@ -22,6 +23,7 @@ jsproxy_config({
     },
     'demo-sg': {
       label: '演示服务-新加坡节点',
+	  hidden: true,
       lines: {
         'node-aliyun-sg.etherdream.com:8443': 1,
       },
@@ -35,7 +37,7 @@ jsproxy_config({
     // 该节点用于加载大体积的静态资源
     'cfworker': {
       label: 'cfworker',
-     // hidden: true,
+      hidden: true,
       lines: {
         // 收费版（高权重）
         'node-cfworker-2.etherdream.com': 4,
@@ -65,7 +67,7 @@ jsproxy_config({
    * 静态资源 CDN 地址
    * 用于加速 `assets` 目录中的资源访问
    */
-  // assets_cdn: 'https://cdn.jsdelivr.net/gh/zjcqoo/zjcqoo.github.io@master/assets/',
+  assets_cdn: 'https://cdn.jsdelivr.net/gh/zjcqoo/zjcqoo.github.io@master/assets/',
 
   // 本地测试时打开，否则访问的是线上的
   assets_cdn: 'assets/',
@@ -79,7 +81,7 @@ jsproxy_config({
   /**
    * 自定义注入页面的 HTML
    */
-  inject_html: '<!-- custom html -->',
+  inject_html: '<div id="ababa">111ffffffffffff</div>',
 
   /**
    * URL 自定义处理（设计中）
