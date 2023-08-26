@@ -67,7 +67,7 @@ jsproxy_config({
    * 静态资源 CDN 地址
    * 用于加速 `assets` 目录中的资源访问
    */
-  //assets_cdn: 'https://cdn.jsdelivr.net/gh/zjcqoo/zjcqoo.github.io@master/assets/',
+  // assets_cdn: 'https://cdn.jsdelivr.net/gh/zjcqoo/zjcqoo.github.io@master/assets/',
 
   // 本地测试时打开，否则访问的是线上的
   assets_cdn: 'assets/',
@@ -81,7 +81,7 @@ jsproxy_config({
   /**
    * 自定义注入页面的 HTML
    */
-  inject_html: '<div id="ababa">111ffffffffffff</div>',
+  inject_html: '',
 
   /**
    * URL 自定义处理（设计中）
