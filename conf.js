@@ -73,7 +73,7 @@ jsproxy_config({
   assets_cdn: 'assets/',
 
   // 首页路径
-  index_path: 'index_v2.html',
+  index_path: 'index_v3.html',
 
   // 支持 CORS 的站点列表（实验中...）
   direct_host_list: 'cors_v1.txt',
@@ -81,7 +81,7 @@ jsproxy_config({
   /**
    * 自定义注入页面的 HTML
    */
-  inject_html: '',
+  inject_html: '<div id="aaa">aaa</div>',
 
   /**
    * URL 自定义处理（设计中）
