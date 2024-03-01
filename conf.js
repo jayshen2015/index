@@ -25,7 +25,7 @@ jsproxy_config({
       label: '演示服务-新加坡节点',
 	  hidden: true,
       lines: {
-        'node-aliyun-sg.etherdream.com:8443': 1,
+        'https://api.allorigins.win/raw?url=': 1,
       },
     },
     'mysite': {
