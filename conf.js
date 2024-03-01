@@ -81,7 +81,7 @@ jsproxy_config({
   /**
    * 自定义注入页面的 HTML
    */
-  inject_html: '<div id="aaa">aaa</div>',
+  inject_html: '<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">',
 
   /**
    * URL 自定义处理（设计中）
