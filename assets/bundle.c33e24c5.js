@@ -2002,7 +2002,12 @@
         for (let a = 0; a < O; a++) {
             0 === a && l || (l = n.c(p, z));
             const i = t.e(o.href);
-            let e = n.a(l, "http") + "/" + i;
+			let e="";
+			if(location.host==l){
+              e = n.a(l, "http") + "/" + i;
+			}else{
+				e = l + i;
+			}
             k ? f["--raw-info"] = k : delete f["--raw-info"],
             y = null;
             try {
