@@ -14,11 +14,11 @@ jsproxy_config({
   node_map: {
     'demo-hk': {
       label: '演示服务-香港节点',
-	  hidden: true,
+	  hidden: false,
       lines: {
         // 主机:权重
-        'node-aliyun-hk-1.etherdream.com:8443': 1,
-        'node-aliyun-hk-2.etherdream.com:8443': 2,
+        'thingproxy.freeboard.io/fetch/': 1,
+      //  'node-aliyun-hk-2.etherdream.com:8443': 2,
       }
     },
     'demo-sg': {
