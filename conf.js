@@ -23,7 +23,7 @@ jsproxy_config({
     },
     'demo-sg': {
       label: '演示服务-新加坡节点',
-	  hidden: true,
+	  hidden: false,
       lines: {
         'https://api.allorigins.win/raw?url=': 1,
       },
