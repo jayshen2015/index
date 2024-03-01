@@ -17,7 +17,7 @@ jsproxy_config({
 	  hidden: false,
       lines: {
         // 主机:权重
-        'thingproxy.freeboard.io/fetch/': 1,
+        'https://thingproxy.freeboard.io/fetch/': 1,
       //  'node-aliyun-hk-2.etherdream.com:8443': 2,
       }
     },
@@ -25,7 +25,7 @@ jsproxy_config({
       label: '演示服务-新加坡节点',
 	  hidden: false,
       lines: {
-        'api.allorigins.win/raw?url=': 1,
+        'https://api.allorigins.win/raw?url=': 1,
       },
     },
     'mysite': {
