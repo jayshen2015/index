@@ -25,7 +25,7 @@ jsproxy_config({
       label: '演示服务-新加坡节点',
 	  hidden: false,
       lines: {
-        'https://api.allorigins.win/raw?url=': 1,
+        'api.allorigins.win/raw?url=': 1,
       },
     },
     'mysite': {
