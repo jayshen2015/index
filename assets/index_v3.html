@@ -19,7 +19,11 @@
       padding: 0.25em 0;
     }
     #btnGo {
-      width: 100%;
+      width: 48%;
+      font-size: 1.5em;
+    }
+    #btnReload {
+      width: 48%;
       font-size: 1.5em;
     }
     #list a {
@@ -33,8 +37,9 @@
   </div>
   <div class="box">
     <button id="btnGo">Go</button>
+    <button id="btnReload">刷新</button>
   </div>
-  <div class="box">
+  <div style="display:none" class="box">
     <span>切换线路:</span>
     <select id="selNode"></select>
   </div>
@@ -55,7 +60,9 @@
 
     sw.addEventListener('message', onSwMsg)
     sendMsgToSw(PAGE_READY_CHECK)
-
+    btnReload.onclick = function() {
+       document.location.href=document.location.href;
+    }
     btnGo.onclick = function() {
       const text = txtURL.value.trim()
       if (text) {
@@ -113,16 +120,15 @@
       ctl.postMessage([cmd, val])
     }
 
-    const SITE_LIST = [
-      ['ctwant', '','https://tinypng.com/backend/opt/output/h9rcndc78rfn6n2yazdh5b8vzyq9v1sp/0484F476-E3D5-44e8-BF7F-FCA396E5592E.png'],
+    const SITE_LIST = [ 
+      ['nytimes', 'cn.nytimes.com','https://img0.baidu.com/it/u=1660973377,32251883&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500'],
+      ['ctwant', '','https://g.watano.top/----https://static.ctwant.com/images/dist/logo.svg'],
       ['cnatw', 'www.cna.com.tw/','https://img1.baidu.com/it/u=2773893810,2493609461&fm=253&fmt=auto&app=138&f=JPEG?w=300&h=300'], 
       ['globalnewstv', 'globalnewstv.com.tw','https://img2.baidu.com/it/u=3092369973,37315639&fm=253&fmt=auto&app=138&f=JPEG?w=977&h=500'], 
       ['thenewslens', '','https://t8.baidu.com/it/u=2348063916,4133504452&fm=218&app=126&size=f242,150&n=0&f=JPEG&fmt=auto?s=9291566E2CE6ED30508F42580200D0BA&sec=1693069200&t=054c73b06818bb26192c96b97741aab1'],
       ['rti', 'www.rti.org.tw','https://img2.baidu.com/it/u=3355253366,1690504808&fm=253&fmt=auto&app=138&f=JPG?w=640&h=494'],
       ['setn', '','https://img0.baidu.com/it/u=729819653,165192658&fm=253&fmt=auto&app=138&f=JPEG?w=175&h=102'],
-      
       ['cnyna', 'cn.yna.co.kr','https://t8.baidu.com/it/u=3597881286,2807850633&fm=218&app=126&size=f242,150&n=0&f=JPEG&fmt=auto?s=3973E8129A9167F102ABBCDC030050AA&sec=1693069200&t=3095ca24e3268deb14657523bb20eaf1'], 
-      
       ['eprice','www.eprice.com.hk','https://img2.baidu.com/it/u=1644501149,1458786990&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto?sec=1693069200&t=1ebdbe2193373541eeb4fb329aa0ee18'],
       ['rthk', 'news.rthk.hk/','https://img1.baidu.com/it/u=509296131,367427974&fm=253&fmt=auto&app=138&f=GIF?w=623&h=450'], 
       ['orientaldaily', 'orientaldaily.on.cc/','https://img0.baidu.com/it/u=1565788615,1876543552&fm=253&fmt=auto&app=138&f=JPEG?w=430&h=270'],
@@ -139,10 +145,8 @@
       ['bbc', 'www.bbc.com/zhongwen','https://img1.baidu.com/it/u=2893166647,908055764&fm=253&fmt=auto&app=120&f=JPEG?w=799&h=500'],
       ['reuters', '','https://img2.baidu.com/it/u=1046524540,604795770&fm=253&fmt=auto&app=138&f=JPEG?w=658&h=411'],
       ['voachinese', '','https://img1.baidu.com/it/u=1534691480,2223943372&fm=253&fmt=auto&app=138&f=JPEG?w=554&h=500'],
-      ['FOXNews', '','https://img1.baidu.com/it/u=867747064,3600606073&fm=253&fmt=auto&app=138&f=PNG?w=529&h=500'],
-      ['rfi', 'www.rfi.fr/cn/','https://tinypng.com/backend/opt/output/d5nshgkzqctggfjddcmym5yvq1zjnpaw/u%3D3111803726%2C3831833906%26fm%3D58.jfif'],
-      
-      
+      ['FOXNews', '','https://img2.baidu.com/it/u=3157845071,3822289394&fm=253&fmt=auto&app=138&f=JPEG?w=400&h=400'],
+      ['rfi', 'www.rfi.fr/cn/','https://7up.pics/images/2024/03/01/rfi.jpeg'],
       ['wiki', 'zh.wikipedia.org/'],
       ['udn','udn.com/news/index','http://mms2.baidu.com/it/u=415959152,4190763135&fm=253&app=138&f=JPEG?w=300&h=159'],
       ['gamer','www.gamer.com.tw','http://mms0.baidu.com/it/u=754462923,4047555133&fm=253&app=120&f=PNG?w=729&h=593'],
