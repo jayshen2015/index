@@ -35,7 +35,7 @@ jsproxy_config({
       label: '节点3',
 	  hidden: false,
       lines: {
-	      "https://corsproxy.io/?": 1
+	'https://corsproxy.io/?': 1,
         //'https://api.codetabs.com/v1/proxy/?quest=': 1,
       },
     },
