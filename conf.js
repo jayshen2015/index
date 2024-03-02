@@ -12,8 +12,9 @@ jsproxy_config({
 
   // 节点配置
   node_map: {
-    'demo-hk': {
-      label: '演示服务-香港节点',
+	  //
+    'demo1': {
+      label: '节点1',
 	  hidden: false,
       lines: {
         // 主机:权重
@@ -21,11 +22,18 @@ jsproxy_config({
       //  'node-aliyun-hk-2.etherdream.com:8443': 2,
       }
     },
-    'demo-sg': {
-      label: '演示服务-新加坡节点',
+    'demo2': {
+      label: '节点2',
 	  hidden: false,
       lines: {
         'https://api.allorigins.win/raw?url=': 1,
+      },
+    },
+    'demo3': {
+      label: '节点3',
+	  hidden: false,
+      lines: {
+        'https://api.codetabs.com/v1/proxy/?quest=': 1,
       },
     },
     'mysite': {
