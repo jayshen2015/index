@@ -2,7 +2,7 @@ jsproxy_config({
   // 当前配置的版本（记录在日志中，用于排查问题）
   // 每次修改配置，该值需要增加，否则不会生效。
   // 默认每隔 5 分钟自动下载配置，若想立即验证，可通过隐私模式访问。
-  ver: '114',
+  ver: '115',
 
   // 通过 CDN 加速常用网站的静态资源（实验中）
   static_boost: {
@@ -13,15 +13,16 @@ jsproxy_config({
   // 节点配置
   node_map: {
 	  //
-    'demo1': {
-      label: '节点1',
+    'defDemo': {
+      label: '默认节点',
 	  hidden: false,
       lines: {
         // 主机:权重
 	      
 	  'https://corsproxy.pro/': 1,
-       // 'https://thingproxy.freeboard.io/fetch/': 1,
-      //  'node-aliyun-hk-2.etherdream.com:8443': 2,
+	  'https://corsproxy.org/?': 1,
+	  'https://corsproxy.io/?': 1,
+          // 'https://thingproxy.freeboard.io/fetch/': 1,
       }
     },
     'demo2': {
@@ -34,14 +35,6 @@ jsproxy_config({
 	  
     'demo3': {
       label: '节点3',
-	  hidden: false,
-      lines: {
-	'https://corsproxy.io/?': 1,
-        //'https://api.codetabs.com/v1/proxy/?quest=': 1,
-      },
-    },
-     'demo4': {
-      label: '节点4',
 	  hidden: false,
       lines: {
 	'https://corsproxy.bunkum.us/corsproxy/?apiurl=': 1,
