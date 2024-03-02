@@ -18,7 +18,9 @@ jsproxy_config({
 	  hidden: false,
       lines: {
         // 主机:权重
-        'https://thingproxy.freeboard.io/fetch/': 1,
+	      
+	  'https://crossorigin.me/': 1,
+       // 'https://thingproxy.freeboard.io/fetch/': 1,
       //  'node-aliyun-hk-2.etherdream.com:8443': 2,
       }
     },
