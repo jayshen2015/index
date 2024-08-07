@@ -22,6 +22,14 @@ jsproxy_config({
 	'https://api.cors.lol/?url=':1
       },
     },
+    'corsproxy': {
+      label: 'corsproxy',
+      hidden: false,
+      lines: {
+	'https://corsproxy.io/?':1
+      },
+    },
+	  
     'bunkum': {
       label: 'bunkum节点',
       hidden: false,
