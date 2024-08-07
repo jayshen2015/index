@@ -2,7 +2,7 @@ jsproxy_config({
   // 当前配置的版本（记录在日志中，用于排查问题）
   // 每次修改配置，该值需要增加，否则不会生效。
   // 默认每隔 5 分钟自动下载配置，若想立即验证，可通过隐私模式访问。
-  ver: '116',
+  ver: '117',
 
   // 通过 CDN 加速常用网站的静态资源（实验中）
   static_boost: {
@@ -16,30 +16,45 @@ jsproxy_config({
       label: '默认节点',
       hidden: false,
       lines: {
-        'https://api.allorigins.win/raw?url=': 1,
-	'https://api.codetabs.com/v1/proxy/?quest=': 1,
-	'https://corsproxy.bunkum.us/corsproxy/?apiurl=': 1,
-	'https://api.cors.lol/?url=': 1
-	      //'https://thingproxy.freeboard.io/fetch/': 1,
+        'https://api.allorigins.win/raw?url=':1,
+	'https://api.codetabs.com/v1/proxy/?quest=':1,
+	'https://corsproxy.bunkum.us/corsproxy/?apiurl=':1,
+	'https://api.cors.lol/?url=':1
       },
     },
-    'demo2': {
+    'bunkum': {
       label: 'bunkum节点',
-	  hidden: false,
+      hidden: false,
       lines: {
-	'https://corsproxy.bunkum.us/corsproxy/?apiurl=': 1,
-        //'https://api.codetabs.com/v1/proxy/?quest=': 1,
+	'https://corsproxy.bunkum.us/corsproxy/?apiurl=':1
       },
     },
-    'onlytext': {
-      label: '纯文本',
-	  hidden: false,
+    'allorigins': {
+      label: 'allorigins',
+      hidden: false,
       lines: {
-        // 主机:权重
-	   // 'https://corsproxy.pro/': 1,
-	  //  'https://corsproxy.org/?': 1,
-	  //  'https://corsproxy.io/?': 1,
-          'https://thingproxy.freeboard.io/fetch/': 1,
+	'https://api.allorigins.win/raw?url=':1
+      },
+    },
+    'codetabs': {
+      label: 'codetabs',
+      hidden: false,
+      lines: {
+	'https://api.codetabs.com/v1/proxy/?quest=':1
+      },
+    },
+    'corslol': {
+      label: 'corslol',
+      hidden: false,
+      lines: {
+	'https://api.cors.lol/?url=':1
+      },
+    },
+    'thingproxy': {
+      label: 'thingproxy',
+      hidden: false,
+      lines: {
+          'https://thingproxy.freeboard.io/fetch/':1
       }
     },
     'mysite': {
