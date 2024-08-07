@@ -17,19 +17,10 @@ jsproxy_config({
       hidden: false,
       lines: {
         'https://api.allorigins.win/raw?url=':1,
-	'https://api.codetabs.com/v1/proxy/?quest=':1,
 	'https://corsproxy.bunkum.us/corsproxy/?apiurl=':1,
 	'https://api.cors.lol/?url=':1
       },
-    },
-    'corsproxy': {
-      label: 'corsproxy',
-      hidden: false,
-      lines: {
-	'https://corsproxy.io/?':1
-      },
-    },
-	  
+    },	  
     'bunkum': {
       label: 'bunkum节点',
       hidden: false,
@@ -44,13 +35,7 @@ jsproxy_config({
 	'https://api.allorigins.win/raw?url=':1
       },
     },
-    'codetabs': {
-      label: 'codetabs',
-      hidden: false,
-      lines: {
-	'https://api.codetabs.com/v1/proxy/?quest=':1
-      },
-    },
+
     'corslol': {
       label: 'corslol',
       hidden: false,
@@ -58,13 +43,38 @@ jsproxy_config({
 	'https://api.cors.lol/?url=':1
       },
     },
-    'thingproxy': {
+
+     'thingproxy': {
       label: 'thingproxy',
       hidden: false,
       lines: {
-          'https://thingproxy.freeboard.io/fetch/':1
+          'https://thingproxy.watano.top/fetch/':1
       }
     },
+// Content-Type: text/plain
+ //    'codetabs': {
+ //      label: 'codetabs',
+ //      hidden: false,
+ //      lines: {
+	// 'https://api.codetabs.com/v1/proxy/?quest=':1
+ //      },
+ //    },
+ //限制国家
+ // 'corsproxy': {
+ //      label: 'corsproxy',
+ //      hidden: false,
+ //      lines: {
+	// 'https://corsproxy.io/?':1
+ //      },
+ //    },
+ //存在跨域问题
+    // 'thingproxy': {
+    //   label: 'thingproxy',
+    //   hidden: false,
+    //   lines: {
+    //       'https://thingproxy.freeboard.io/fetch/':1
+    //   }
+    // },
     'mysite': {
       label: '当前站点',
       lines: {
