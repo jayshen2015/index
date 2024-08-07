@@ -2404,38 +2404,43 @@
         const [o,i] = a.data
           , e = a.source;
         switch (o) {
-        case P.c:
+        case P.c: //3
             r.d(i),
             Q(P.k, [i], e.id);
             break;
-        case P.d:
+        case P.d: //1
             J(e, P.l, {
                 cookies: r.a(),
                 conf: I
             });
             break;
-        case P.e:
+        case P.e: //5
             K(i, !1);
             break;
-        case P.f:
+        case P.f: //6 
             K(i, !0);
             break;
-        case P.a:
+        case P.a: //111 PAGE_CONF_GET
             I ? J(e, P.j, I) : ra().then(a=>{
                 J(e, P.j, I)
             }
             );
             break;
-        case P.b:
+        case P.b: //110 PAGE_CONF_SET
             ta(i, !0),
             Q(P.i, I);
             break;
-        case P.h:
+        case P.h: //112 SW_CONF_RETURN
             sa();
             break;
-        case P.g:
+	case 999: // 删除缓存
+            v._db.deleteObjectStore("url-cache");
+            break;
+        case P.g: //200   PAGE_READY_CHECK
             J(e, P.m),
             sa()
+
+			
         }
     }
     ),
