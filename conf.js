@@ -18,7 +18,9 @@ jsproxy_config({
       lines: {
         'https://api.allorigins.win/raw?url=': 1,
 	'https://api.codetabs.com/v1/proxy/?quest=': 1,
-	'https://corsproxy.bunkum.us/corsproxy/?apiurl=': 1
+	'https://corsproxy.bunkum.us/corsproxy/?apiurl=': 1,
+	'https://api.cors.lol/?url=': 1
+	      //'https://thingproxy.freeboard.io/fetch/': 1,
       },
     },
     'demo2': {
