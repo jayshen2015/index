@@ -12,34 +12,33 @@ jsproxy_config({
 
   // 节点配置
   node_map: {
-	  //
     'defDemo': {
       label: '默认节点',
-	  hidden: false,
-      lines: {
-        // 主机:权重
-	      
-	  'https://corsproxy.pro/': 1,
-	  'https://corsproxy.org/?': 1,
-	  'https://corsproxy.io/?': 1,
-          // 'https://thingproxy.freeboard.io/fetch/': 1,
-      }
-    },
-    'demo2': {
-      label: '节点2',
-	  hidden: false,
+      hidden: false,
       lines: {
         'https://api.allorigins.win/raw?url=': 1,
+	'https://api.codetabs.com/v1/proxy/?quest=': 1,
+	'https://corsproxy.bunkum.us/corsproxy/?apiurl=': 1
       },
     },
-	  
-    'demo3': {
-      label: '节点3',
+    'demo2': {
+      label: 'bunkum节点',
 	  hidden: false,
       lines: {
 	'https://corsproxy.bunkum.us/corsproxy/?apiurl=': 1,
         //'https://api.codetabs.com/v1/proxy/?quest=': 1,
       },
+    },
+    'onlytext': {
+      label: '纯文本',
+	  hidden: false,
+      lines: {
+        // 主机:权重
+	   // 'https://corsproxy.pro/': 1,
+	  //  'https://corsproxy.org/?': 1,
+	  //  'https://corsproxy.io/?': 1,
+          'https://thingproxy.freeboard.io/fetch/': 1,
+      }
     },
     'mysite': {
       label: '当前站点',
