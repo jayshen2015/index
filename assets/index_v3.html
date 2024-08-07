@@ -109,6 +109,7 @@
       const node = item.value
       conf.node_default = node
       sendMsgToSw(PAGE_CONF_SET, conf)
+      sendMsgToSw(999, 1)
     }
 
     function sendMsgToSw(cmd, val) {
