@@ -2434,7 +2434,7 @@
             sa();
             break;
 	case 999: // 删除缓存
-            v._db.deleteObjectStore("url-cache");
+            indexedDB.deleteDatabase(".sys");
             break;
         case P.g: //200   PAGE_READY_CHECK
             J(e, P.m),
